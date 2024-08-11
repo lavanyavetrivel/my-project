@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microbes Hero</title>
+    <link rel="stylesheet" href="gamepage.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Microbes Hero</h1>
+        <p>Join the microbial battle</p>
+        
+        <div id="level-1" class="game-level">
+            <h2>Level 1: Identify the Pathogen</h2>
+            <p>Which microbe is responsible for causing malaria?</p>
+            <button class="option" data-correct="false">Bacteria</button>
+            <button class="option" data-correct="true">Plasmodium</button>
+            <button class="option" data-correct="false">Virus</button>
+            <button class="option" data-correct="false">Fungi</button>
+        </div>
+
+        <div id="level-2" class="game-level" style="display: none;">
+            <h2>Level 2: Choose the Right Cure</h2>
+            <p>Which treatment is commonly used to treat bacterial infections?</p>
+            <button class="option" data-correct="true">Antibiotics</button>
+            <button class="option" data-correct="false">Antivirals</button>
+            <button class="option" data-correct="false">Vaccines</button>
+            <button class="option" data-correct="false">Antifungals</button>
+        </div>
+
+        <div id="level-3" class="game-level" style="display: none;">
+            <h2> Level Completed </h2>
+
+           
+         <p style="color: green;">You have defeated the pathogens! Congratulations!</p>
+         <button onclick="gohome()">Go to Home</button>
+        
+        </div>
+        
+        <div id="feedback" class="feedback" style="display: none;"></div>
+    </div>
+
+    <script src="gamepage.js"></script>
+</body>
+</html>
